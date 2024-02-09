@@ -1,0 +1,184 @@
+:root{
+    --main-color: #009ad8;
+    --site-bg: #1e202b;
+}
+body{
+    background: var(--site-bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.alert{
+    text-align: center;
+    margin-bottom: 20px !important;
+    border-radius: 35px; 
+}
+
+/* NAVIGATION-BAR */
+nav button i{
+    color: var(--main-color);
+}
+nav img{
+    width: 64px;
+    height: 38px;
+    margin-right: 10px;
+    align-self: center;
+}
+nav .logo-title h1{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+nav .logo-title small{
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+nav ul li{
+    margin-left: 10px;
+}
+nav ul li a.active, nav ul li a:hover{
+    color: var(--main-color) !important;
+    border-color: var(--main-color);
+}
+nav ul li a {
+    color: white !important;
+    padding: 5px 25px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+/* Weather Search-btn */
+.weather-bg{
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 70px 0;
+    min-height: 350px;
+}
+form input[type='text']{
+    background-color: var(--site-bg);
+    color: #fff;
+    padding: 20px 50px 20px 20px !important;
+}
+form input[type='button']{
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    padding: 0 40px !important;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+/* Weather Card */
+.forecast{
+    position: relative;
+    transform: translateY(-20%);
+    background-color: #323544;
+    height: 100%;
+    border-color: #323544;
+    border-radius: 10px;
+}
+
+.forecast .forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    text-align: center;
+    font-weight: 400;
+}
+.forecast .forecast-body {
+    text-align: left;
+    padding: 30px 0;
+    padding: 50px 20px 10px;
+}
+.nextDay{
+    background-color: #262936;
+}
+.forecast .forecast-body .degree .degree-num{
+    font-size: 6.4285714286rem;
+    margin-right: 30px;
+}
+.forecast .forecast-body .degree .degree-num sub{
+    top: -0.5em;
+}
+.forecast .forecast-body .degree img{
+    margin-top: 33px;
+}
+.nextDay .forecast-body img, .forecast-body:last-child img{
+    margin-bottom: 20px;
+}
+.forecast .forecast-body p{
+    color: var(--main-color);
+}
+.forecast .forecast-body .forecast-bottom-icon img{
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.forecast .forecast-body .forecast-bottom-icon{
+    color: #999;
+}
+
+
+/*  */
+footer{
+    background: #262936;
+}
+footer p{
+    color: #bfc1c8;
+}
+footer .social-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #009ad8;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+footer .social-icon:hover{
+    background-color: #037baa;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+::selection{
+    background-color: var(--main-color);
+    color: #F2F1EB !important;
+    box-shadow: none;
+}
+
+
+
+
+
+@media screen and (min-width: 1230px) {
+    .weather-card .container{
+        padding: 0 50px;
+    }
+}
